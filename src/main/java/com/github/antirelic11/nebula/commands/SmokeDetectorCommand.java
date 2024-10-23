@@ -7,11 +7,10 @@ import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentText;
 import org.apache.logging.log4j.LogManager;
 
-public class SmokeDetectorCommand extends CommandBase {
 
-    private boolean toggleSmokeDetector = false;
+public class SmokeDetectorCommand extends CommandBase {
+    private static boolean toggleSmokeDetector = false;
     public void smokeDetectorSound() {
-        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(String.valueOf(toggleSmokeDetector)));
         if(toggleSmokeDetector) {
             if (Minecraft.getMinecraft().thePlayer != null) {
                 Minecraft.getMinecraft().thePlayer.playSound("minecraft:note.pling", 1.0F, 2.0F);
