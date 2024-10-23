@@ -1,3 +1,3 @@
 # Aurora, a Hypixel Skyblock Mod [1.8.9]
 Currently there is nothing inside this mod.
-However i am planning on adding an achievement system to guide new players, new profile gamerules and much more.
+However, I am planning on adding an achievement system to guide new players, new profile gamerules and much more.
