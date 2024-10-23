@@ -11,9 +11,10 @@ public class SmokeDetectorCommand extends CommandBase {
 
     private boolean toggleSmokeDetector = false;
     public void smokeDetectorSound() {
+        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(String.valueOf(toggleSmokeDetector)));
         if(toggleSmokeDetector) {
             if (Minecraft.getMinecraft().thePlayer != null) {
-                Minecraft.getMinecraft().thePlayer.playSound("minecraft:note.pling", 1.0F, 1.0F);
+                Minecraft.getMinecraft().thePlayer.playSound("minecraft:note.pling", 1.0F, 2.0F);
             }
         }
     }
@@ -37,7 +38,7 @@ public class SmokeDetectorCommand extends CommandBase {
     public void processCommand(ICommandSender sender, String[] args) throws CommandException {
         LogManager.getLogger("SmokeDetectorMode").info("Plays a noteblock sound every 15 seconds.");
         String status = toggleSmokeDetector ? "OFF" : "ON";
-        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("§cSmoke detector :§l " + status));
         toggleSmokeDetector = !toggleSmokeDetector;
+        Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText("§cSmoke detector :§l " + status));
     }
 }
