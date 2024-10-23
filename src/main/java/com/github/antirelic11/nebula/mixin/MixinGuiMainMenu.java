@@ -1,4 +1,4 @@
-package com.github.antirelic11.aurora.mixin;
+package com.github.antirelic11.nebula.mixin;
 
 import net.minecraft.client.gui.GuiMainMenu;
 import org.spongepowered.asm.mixin.Mixin;

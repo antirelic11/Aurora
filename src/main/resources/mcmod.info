@@ -1,16 +1,16 @@
 [
   {
     "modid": "${modid}",
-    "name": "Xample Mod",
-    "description": "A mod that is used as an example.",
+    "name": "Nebula",
+    "description": "A quality-of-life mod that (should) improve your skyblock experience. ",
     "version": "${version}",
     "mcversion": "${mcversion}",
-    "url": "https://github.com/romangraef/Forge1.8.9Template/",
+    "url": "https://github.com/antirelic11/Nebula",
     "updateUrl": "",
     "authorList": [
-      "You"
+      "AntiRelic"
     ],
-    "credits": "",
+    "credits": "nea89 (Template)",
     "logoFile": "",
     "screenshots": [],
     "dependencies": []
